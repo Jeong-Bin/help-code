@@ -8,8 +8,8 @@ import platform
 import seaborn as sns
 
 # 이미지에 한글 표시 설정
-if platform.system() == 'Window': # 윈도우인 경우 맑은고딕
-    font_name = font_manager.FontPrperties(fname="c:/Windows/Font/malgun.ttf").get_name()
+if platform.system() == 'Windows': # 윈도우인 경우 맑은고딕
+    font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/malgun.ttf").get_name()
     rc('font', family=font_name)
 else :  # Mac인 경우 애플고딕
     rc('font', family='AppleGothic')
