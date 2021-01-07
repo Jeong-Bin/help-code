@@ -1,0 +1,4 @@
+fig, ax1 = plt.subplots(figsize=(10,10))
+sns.countplot(data=data, x='', ax=ax1, color='')
+ax1.set_xticklabels(['{:.1f}'.format(float(t.get_text())) for t in ax1.get_xticklabels()])
+ax1.xaxis.set_tick_params(rotation=)
